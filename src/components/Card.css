@@ -1,0 +1,8 @@
+.card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+
+  /* background-image: url("../public/images/background.png"); */
+}
