@@ -1,28 +1,75 @@
 body {
-  background-image: url("./asset/bg.png");
+  background-color: #f7c9b6;
 }
 
-header {
-  text-align: center;
-  font-size: 50px;
-  font-family: "Caveat";
-  background-color: #f6d4d2;
-  padding: 10px;
-  word-spacing: 0.3em;
+.main {
+  display: grid;
+  grid-template: 4 /1;
 }
 
-img {
-  width: 440px;
-  height: 300px;
-  margin: 10px;
-  align-content: space-between;
+text {
+  font-size: 40px;
+  font-style: italic;
+  color: white;
 }
-
-.card {
+/* main child */
+.header {
+  /* display: grid;
+  grid-template: 8 / 16; */
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 80px;
+  justify-content: space-between;
+  /* background-color: crimson; */
+  background-image: url(./asset/background.png);
+  background-size: cover;
+  height: 780px;
+  /* max-width: 1915px; */
+  position: relative;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
 
-  /* background-image: url("../public/images/background.png"); */
+.story {
+  background-color: #549bad;
+  position: relative;
+  height: 780px;
+}
+
+.personal {
+  background-color: #83bdc0;
+  position: relative;
+  height: 780px;
+}
+
+footer {
+  background-color: blue;
+  position: relative;
+  height: 180px;
+}
+
+/* header child */
+.leftheader {
+  display: flex;
+  align-items: flex-end;
+}
+
+.rightheader {
+  align-items: flex-start;
+}
+
+.mystory {
+  grid-template: 2 / 12 / span 2 / span 3;
+  margin: 50px;
+}
+.personalparticular {
+  margin: 50px;
+}
+.experience {
+  margin: 50px;
+}
+.portfolio {
+  margin: 50px;
+}
+.contact {
+  margin: 50px;
 }
